@@ -1,0 +1,186 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \usepackage[hidelinks]{hyperref}
+    \usepackage[left=2cm, right=2cm, top=2cm]{geometry}
+    \usepackage{longtable}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+    \vspace*{-40pt}
+
+    
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Profile
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \vspace*{-2pt}
+  \begin{center}
+    {\Huge \scshape {Sai Rahul Nallandhighal}}\\
+    \vspace*{2pt}
+    
+    \vspace*{2pt}
+    \href{mailto:mkssps42@gmail.com}{mkssps42@gmail.com} | \href{tel:8499036028}{8499036028} | 3-125/87/1/57/1, Streetno:5, Lecturers Colony,Boduppal\\
+    \vspace*{2pt}
+    \textbf{\href{https://www.linkedin.com/in/sai-rahul-nallandhighal/}{Linkedin | }}\textbf{\href{https://leetcode.com/mkssps42/}{LeetCode | }}\textbf{\href{https://www.hackerrank.com/mkssps42}{HackerRank | }}\textbf{\href{https://github.com/KOAwesome}{GitHub}}\\
+  \end{center}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %
+    %     Education
+    %
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \header{Education}
+      \vspace{2mm}
+      \textbf{Malla Reddy Engineering College}\hfill Hyderabad, India\\
+Computer Science loT, B.Tech \hfill Nov 2020 - Present\\
+{\sl CGPA: 8.5}\\
+\vspace{2mm}
+      \textbf{Sri Chaitanya Junior College}\hfill Hyderabad, India\\
+MPC, Intermediate Education \hfill 2018 - 2020\\
+{\sl Percentage: 93}\%\\
+\vspace{2mm}
+      \textbf{Sri Sai Public School}\hfill Hyderabad, India\\
+ICSE High School \hfill 2008 - 2018\\
+{\sl Percentage: 88}\%\\
+\vspace{2mm}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Skills
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \header{Skills}
+  \vspace{2mm}
+  \begin{longtable}{p{4cm}p{12cm}}
+  Programming Languages: & Java, Python, Shell Scripting, C++ \\
+  Libraries/Frameworks: & Java Script, Django, Numpy, Pandas, Seaborn, Matplotlib \\
+  Tools / Platforms: & Nmap, Nessus, Burpsuite, Wireshark. \\
+  Databases: & MySql \\
+  \end{longtable}
+  \vspace{1mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %
+    %     Projects
+    %
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \header{Projects / Open-Source}
+      \vspace{2mm}
+      {\textbf{Smart Saline Monitoring System}}\textbf{ | \href{https://github.com/KOAwesome/Smart-Saline-Monitoring-System}{Link}}\hfill{\sl Arduino, HX711, LCD, I2C, GSM}\\
+          \vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+\item  In emergency times, hospitals will be flooded with patients and sometimes the hostel may be understated, our team designed a smart automation which informs the responsible person about the details of saline bottle.
+\item  Developed a weight monitoring system using Arduino and HX711 load cell sensor to measure weight accurately. Integrated an LCD display for real-time weight visualization and a GSM module to send SMS notifications when weight thresholds are exceeded.
+\end{itemize}
+          \vspace*{3mm}
+      {\textbf{A Novel Web Attack Detection System}}\textbf{ | \href{https://github.com/KOAwesome/A-Novel-Web-Attack-Detection-System}{Link}}\hfill{\sl Python, Django}\\
+          \vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+\item  We are living in a world where things are connected together with the help of Internet, smart watches, smart TVs are today\textquotesingle{}s normal.
+\item  So with convenience, there is also a risk, the communication between various devices is easily susceptible to various attacks. I developed a model in Python which identifies the different types of attacks.
+\item  I used data sheets from keggle website
+\end{itemize}
+          \vspace*{3mm}
+      {\textbf{Quiz Generator}}\textbf{ | \href{https://github.com/KOAwesome/Quiz-Generator}{Link}}\hfill{\sl Python-docx, python3}\\
+          \vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+\item  During covid times, education is pertained to home. Students were given excel sheets which contain objective question bank.
+\item  Reading from the excel sheet provides no interaction and is ineffective. I designed a program which can generate quiz from the excel sheet provided to it. It is console based. It removes the questions from excel if we answer them right.
+\end{itemize}
+          \vspace*{3mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      %
+      %     Certifications
+      %
+      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \header{Certifications}
+      \vspace{2mm}
+      • NPTEL Online Certification Python for Data Science - \textbf{\href{https://drive.google.com/file/d/18eUHqC2QtSAs2ADX401i\_NORVOAxcpkN/view?usp=share\_link}{IIT Madras}}\\
+\vspace*{1mm}
+      • NPTEL Online Certification Ethical Hacking - \textbf{\href{https://drive.google.com/file/d/18c0hokOsa4\_ATjbI7dFbXX0rOkJf4xv8/view?usp=share\_link}{IIT Kharagpur}}\\
+\vspace*{1mm}
+      • Introduction to Programming using python - Microsoft Certifications.\\
+\vspace*{1mm}
+      • Azure Fundamentals - Microsoft Certifications.\\
+\vspace*{1mm}
+      \vspace{2mm}
+
+\header{Honors \& Awards}
+      \vspace{2mm} 
+      Won inter college Basket ball for 2 consecutive years.\\
+\vspace*{1mm}
+      Achieved a 5 star rating on Hacker Rank platform in Java programming language\\
+\vspace*{1mm}
+
+    \ 
+    \end{document}

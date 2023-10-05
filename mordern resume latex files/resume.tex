@@ -1,0 +1,160 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This is a modified ONE COLUMN version of
+% the following template:
+%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \documentclass[]{deedy-resume-openfont}
+  
+      \begin{document}
+      
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %
+  %     Profile
+  %
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  
+\namesection{Sai} {Rahul Nallandhighal}\infoline{\href{mailto:mkssps42@gmail.com}{mkssps42@gmail.com} | 8499036028 | 3-125/87/1/57/1, Streetno:5, Lecturers Colony,Boduppal}\\\vspace{4pt}\linksline{\descript{\href{https://github.com/KOAwesome}{GitHub | }}\descript{\href{https://www.linkedin.com/in/sai-rahul-nallandhighal/}{Linkedin | }}\descript{\href{https://leetcode.com/mkssps42/}{LeetCode | }}\descript{\href{https://www.hackerrank.com/mkssps42}{HackerRank}}}\underlineheader{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Education
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Education}
+\raggedright
+
+    \runsubsection{Malla Reddy Engineering College}\hspace*{\fill}  \location{Nov 2020 - Present}\\
+    \descript{Computer Science loT, B.Tech}\hspace*{\fill}\location{Hyderabad, India}\\
+    CGPA: 8.5\\
+    \sectionsep
+  
+
+    \runsubsection{Sri Chaitanya Junior College}\hspace*{\fill}  \location{2018 - 2020}\\
+    \descript{MPC, Intermediate Education}\hspace*{\fill}\location{Hyderabad, India}\\
+    Percentage: 93\%\\
+    \sectionsep
+  
+
+    \runsubsection{Sri Sai Public School}\hspace*{\fill}  \location{2008 - 2018}\\
+    \descript{ICSE High School}\hspace*{\fill}\location{Hyderabad, India}\\
+    Percentage: 88\%\\
+    \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Skills
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Skills}
+\raggedright
+\begin{longtable}{p{5cm}p{13.5cm}}
+\descript{Programming Languages} & {\location{Java, Python, Shell Scripting, C++}} \\
+\descript{Libraries/Frameworks} & {\location{Java Script, Django, Numpy, Pandas, Seaborn, Matplotlib}} \\
+\descript{Tools / Platforms} & {\location{Nmap, Nessus, Burpsuite, Wireshark.}} \\
+\descript{Databases} & {\location{MySql}} \\
+\end{longtable}
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %
+        %     Projects
+        %
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \section{Projects / Open-Source}
+        \raggedright
+        
+            \runsubsection{\large{Smart Saline Monitoring System}}
+            \descript{| \href{https://github.com/KOAwesome/Smart-Saline-Monitoring-System}{Link}}\hfill \location{Arduino, HX711, LCD, I2C, GSM}\\
+            \begin{tightemize}
+\item  In emergency times, hospitals will be flooded with patients and sometimes the hostel may be understated, our team designed a smart automation which informs the responsible person about the details of saline bottle.
+\item  Developed a weight monitoring system using Arduino and HX711 load cell sensor to measure weight accurately. Integrated an LCD display for real-time weight visualization and a GSM module to send SMS notifications when weight thresholds are exceeded.
+\end{tightemize}
+            \sectionsep
+          
+        
+            \runsubsection{\large{A Novel Web Attack Detection System}}
+            \descript{| \href{https://github.com/KOAwesome/A-Novel-Web-Attack-Detection-System}{Link}}\hfill \location{Python, Django}\\
+            \begin{tightemize}
+\item  We are living in a world where things are connected together with the help of Internet, smart watches, smart TVs are today\textquotesingle{}s normal.
+\item  So with convenience, there is also a risk, the communication between various devices is easily susceptible to various attacks. I developed a model in Python which identifies the different types of attacks.
+\item  I used data sheets from keggle website
+\end{tightemize}
+            \sectionsep
+          
+        
+            \runsubsection{\large{Quiz Generator}}
+            \descript{| \href{https://github.com/KOAwesome/Quiz-Generator}{Link}}\hfill \location{Python-docx, python3}\\
+            \begin{tightemize}
+\item  During covid times, education is pertained to home. Students were given excel sheets which contain objective question bank.
+\item  Reading from the excel sheet provides no interaction and is ineffective. I designed a program which can generate quiz from the excel sheet provided to it. It is console based. It removes the questions from excel if we answer them right.
+\end{tightemize}
+            \sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Certifications
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Certifications}
+\vspace{4pt}
+\begin{tightemize}
+\item NPTEL Online Certification Python for Data Science - \descript{\href{https://drive.google.com/file/d/18eUHqC2QtSAs2ADX401i\_NORVOAxcpkN/view?usp=share\_link}{IIT Madras}}\\
+\item NPTEL Online Certification Ethical Hacking - \descript{\href{https://drive.google.com/file/d/18c0hokOsa4\_ATjbI7dFbXX0rOkJf4xv8/view?usp=share\_link}{IIT Kharagpur}}\\
+\item Introduction to Programming using python - Microsoft Certifications.\\
+\item Azure Fundamentals - Microsoft Certifications.\\
+\end{tightemize}
+\vspace{4pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Awards
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Honors \& Awards}
+\vspace{4pt}
+\begin{tightemize}
+\item Won inter college Basket ball for 2 consecutive years.\\
+\item Achieved a 5 star rating on Hacker Rank platform in Java programming language\\
+\end{tightemize}
+      \ 
+      \end{document}
